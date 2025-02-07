@@ -66,13 +66,13 @@ export default function PersonalHero() {
           <div className="flex items-start gap-8  ">
             {
                 heroButton.map((item,index)=>(
-                    <Button text={item.text} key={index} styles={` rounded-lg shadow-md text-xl py-2 h-12 hover:shadow-lg  ${index %2==0 ? "bg-secondaryColor  text-white w-full md:w-[500px]":"text-secondaryColor w-[90px] border-[2px] border-secondaryColor bg-none "}`}  />
+                    <Button text={item.text} key={index} styles={` rounded-lg shadow-md text-xl py-2 h-12 hover:shadow-lg  ${index %2==0 ? "bg-secondaryColor  text-white w-full md:w-[500px]":"text-secondaryColor w-[80px] border-[2px] border-secondaryColor bg-none "}`}  />
                 ))
             }
 
           </div>
         </div>
-        <Image src={Hero} width={500} height={500} alt="Hero image" className="rounded-md"/>
+        <Image src={Hero} width={350} height={350} alt="Hero image" className="rounded-md"/>
 
 
        </div>
