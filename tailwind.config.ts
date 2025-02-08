@@ -14,7 +14,11 @@ export default {
         headertext : '#013F16',
         footing : "#2CBE18",
         heroBg:"#e6f6e9",
-        'custom-gradient': 'linear-gradient(90deg, #D4F3E1 0%, #FFFCF5 100%)',
+        logoSection:"#E7E9EE",
+        cardOneBg:"#C4DAD2",
+        cardTwoBg:"#E9EFEC",
+        safetyBg:"#F5EFE7",
+        
       },
       animation: {
         marquee: 'marquee 10s linear infinite',
