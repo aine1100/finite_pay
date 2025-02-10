@@ -43,7 +43,7 @@ export default function FaqPage() {
                 <h1 className="text-xl text-secondaryColor font-bold">Anymore questions</h1>
                 <p className="text-primaryText">Lets get Your answer</p>
     
-                <Button text="Contact Us" styles={`bg-headertext text-white w-14 h-14 rounded-md`}/>
+                <Button text="Contact Us" styles={`bg-headertext text-white w-28 h-14 rounded-md`}/>
 
               </div>
         </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Slider() {
   return (
-    <div className="overflow-hidden bg-white w-full pt-2">
+    <div className="overflow-hidden  w-full pt-2">
       {/* Animated container */}
       <div className="flex space-x-2 animate-marquee whitespace-nowrap">
         {/* Duplicating images to make the transition seamless */}

@@ -3,8 +3,9 @@ import { useState } from "react";
 import Button from "../utils/button";
 import Image from "next/image";
 import Hero from "../assets/images/hero2.png"
-import { selectionButtons,heroText ,appStores, businessHeroButton} from "../data/hero";
+import { selectionButtons ,appStores, businessHeroButton} from "../data/hero";
 import { useRouter } from "next/navigation";
+import { buheroText } from "../data/businness";
 
 export default function BusinnesHero() {
   const [selected, setIsSelected] = useState(1); 
@@ -56,12 +57,12 @@ export default function BusinnesHero() {
             ))}
           </div>
           <h1 className="xl:text-5xl text-3xl font-bold text-white w-full xl:w-[1000px]">
-            WE POWER AFRICA’S GLOBAL AMBITIONS, BUILT FOR AFRICANS READY FOR THE
-            WORLD
+          EMPOWER YOUR LOCAL BUSINESS,
+          TRADE GLOBALLY
           </h1>
           <div className="flex flex-col gap-5 items-start w-full xl:w-[900px]">
             {
-             heroText.map((item,index)=>(
+             buheroText.map((item,index)=>(
                 <p key={index} className="text-2xl text-white font-semibold">{item}</p>
              ))   
             }
@@ -70,7 +71,7 @@ export default function BusinnesHero() {
           <div className="flex items-start gap-8  ">
             {
                 businessHeroButton.map((item,index)=>(
-                    <Button text={item.text} key={index} styles={` rounded-lg shadow-md text-xl py-2 h-12 hover:shadow-lg  ${index %2==0 ? "bg-secondaryColor  text-white w-full md:w-[600px]":"text-secondaryColor w-[80px] border-[2px] border-secondaryColor bg-none "}`}  />
+                    <Button text={item.text} key={index} styles={` rounded-lg shadow-md text-xl py-2 h-12 hover:shadow-lg  ${index %2==0 ? "bg-secondaryColor  text-white w-full md:w-[600px]":"text-white w-[80px] border-[2px] border-white bg-none "}`}  />
                 ))
             }
 

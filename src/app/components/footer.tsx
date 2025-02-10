@@ -17,11 +17,11 @@ export default function Footer() {
               <input
                 type="text"
                 placeholder="Enter your email"
-                className="xl:w-[550px] w-full h-12 px-5  focus:outline-none p-2 rounded-md"
+                className="xl:w-[600px] w-full h-12 px-5  focus:outline-none p-2 rounded-md"
               />
               <Button
                 text="Contact Us"
-                styles={`bg-secondaryColor text-white w-[120px] px-3  h-12 rounded-md`}
+                styles={`bg-secondaryColor text-white w-[119px] px-3  h-12 rounded-md`}
               />
             </div>
           </div>
