@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { faq } from "../data/faq";
+import Button from "../utils/button";
 
 export default function FaqPage() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -12,7 +13,7 @@ export default function FaqPage() {
     };
 
     return (
-        <div className="px-10 pt-10 pb-5 flex w-full items-start justify-between">
+        <div className="px-10 pt-5 xl:pt-16 pb-5 flex w-full items-start xl:justify-center xl:gap-20 justify-between">
             <div className="flex flex-col gap-5 w-full xl:w-[900px] bg-[#D4F3E1] p-4 rounded-md">
                 {faq.map((item, index) => (
                     <div key={index} className="flex px-3 gap-4 flex-col">
@@ -33,7 +34,18 @@ export default function FaqPage() {
                         <div className="w-full bg-primaryText rounded-md h-[1.4px]"></div>
                     </div>
                 ))}
+              
             </div>
+            <div className="flex flex-col gap-3 items-start">
+              <h1 className="xl:text-3xl text-2xl font-bold text-primaryText">Frequently</h1>
+                <h1 className="xl:text-3xl text-2xl font-bold text-primaryText">Asked</h1>
+                <h1 className="xl:text-3xl text-2xl font-bold text-primaryText">Questions</h1>
+                <h1 className="text-xl text-secondaryColor font-bold">Anymore questions</h1>
+                <p className="text-primaryText">Lets get Your answer</p>
+    
+                <Button text="Contact Us" styles={`bg-headertext text-white w-14 h-14 rounded-md`}/>
+
+              </div>
         </div>
     );
 }

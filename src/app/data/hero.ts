@@ -1,12 +1,18 @@
 import apple from "../assets/images/apple.png";
 import playstore from "../assets/images/playstore.png";
 
+
+
 const selectionButtons = [
     {
       text: "Personal Account",
+      link:"/pages/personalAccount"
+     
     },
     {
       text: "Business Account",
+      link:"/pages/BusinnessAccount"
+    
     },
   ];
   const appStores = [
@@ -31,5 +37,12 @@ const selectionButtons = [
         text:"Login"
     }
   ]
+  const businessHeroButton=[
+    {
+      text:"Open a Businness account"
+  },{
+      text:"Login"
+  }
+  ]
 
-  export {selectionButtons,appStores,heroText,heroButton}
+  export {selectionButtons,appStores,heroText,heroButton,businessHeroButton}

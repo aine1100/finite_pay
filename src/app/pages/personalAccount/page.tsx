@@ -7,6 +7,7 @@ import Slider from "@/app/components/slider";
 import HowItWorks from "@/app/components/Working";
 import LogoSection from "@/app/utils/logoSection";
 import FaqPage from "@/app/components/faq";
+import Footer from "@/app/components/footer";
 
 export default function PersonAccountLanding(){
     return(
@@ -23,6 +24,7 @@ export default function PersonAccountLanding(){
                 <OnBoarding/>
                 <Testimonials/>
                 <FaqPage/>
+                <Footer/>
                 
             </div>
         </main>

@@ -4,9 +4,11 @@ import Button from "../utils/button";
 import Image from "next/image";
 import Hero from "../assets/images/hero.png"
 import { selectionButtons,heroText,heroButton ,appStores} from "../data/hero";
+import { useRouter } from "next/navigation";
 
 export default function PersonalHero() {
   const [selected, setIsSelected] = useState(0); 
+  const router=useRouter();
   return (
     <section className="bg-[#D4F3E1] w-full  px-10 pt-5 pb-10">
       <div className="flex flex-col w-full gap-8 items-start justify-between">
@@ -19,12 +21,15 @@ export default function PersonalHero() {
               <div key={index}>
                 <Button
                   text={items.text}
-                  styles={` rounded-lg text-xl ${
+                  styles={` rounded-lg text-xl cursor-pointer ${
                     selected == index
                       ? "bg-secondaryColor text-white"
                       : "text-secondaryColor border-secondaryColor border-[2px]"
                   }`}
-                  handlePress={()=>setIsSelected(index)}
+                  handlePress={()=>{setIsSelected(index)
+                    router.push(items.link)
+                    
+                  }}
                 />
               </div>
             ))}
