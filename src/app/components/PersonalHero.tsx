@@ -1,5 +1,4 @@
 "use client";
-import logos from "../constants/icon";
 import { useState } from "react";
 import Button from "../utils/button";
 import Image from "next/image";

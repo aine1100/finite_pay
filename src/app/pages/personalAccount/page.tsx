@@ -1,10 +1,12 @@
-import PersonalFeatures from "../../components/features";
-import OnBoarding from "../../components/onBoarding";
-import PersonalHero from "../../components/PersonalHero";
-import PersonalSafety from "../../components/safety";
-import Slider from "../../components/slider";
-import HowItWorks from "../../components/Working";
-import LogoSection from "../../utils/logoSection";
+import Testimonials from "@/app/components/testimonial";
+import PersonalFeatures from "@/app/components/features";
+import OnBoarding from "@/app/components/onBoarding";
+import PersonalHero from "@/app/components/PersonalHero";
+import PersonalSafety from "@/app/components/safety";
+import Slider from "@/app/components/slider";
+import HowItWorks from "@/app/components/Working";
+import LogoSection from "@/app/utils/logoSection";
+import FaqPage from "@/app/components/faq";
 
 export default function PersonAccountLanding(){
     return(
@@ -19,6 +21,8 @@ export default function PersonAccountLanding(){
                 <HowItWorks/>
                 <PersonalSafety/>
                 <OnBoarding/>
+                <Testimonials/>
+                <FaqPage/>
                 
             </div>
         </main>
