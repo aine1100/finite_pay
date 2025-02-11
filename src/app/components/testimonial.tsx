@@ -5,7 +5,7 @@ export default function Testimonials(){
     return(
         <div className="w-full flex flex-col gap-8 px-10 items-start py-2">
             <h1 className="xl:text-4xl text-2xl font-bold text-primaryText">TRUSTED BY PEOPLE LIKE YOU</h1>
-            <div className="flex items-start w-full justify-between">
+            <div className="flex xl:items-start xl:flex-row flex-col items-center w-full justify-between">
                 <div className="flex flex-col gap-3">
                     <p className="text-headertext text-xl xl:w-[700px] w-full">Hear directly from our users who are sending money home, managing their business payments, and enjoying the simplicity of global transactions.</p>
                     <p className="text-headertext text-xl xl:w-[700px] w-full">See why they trust us to handle their finances with ease.</p>

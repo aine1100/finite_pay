@@ -8,10 +8,10 @@ export default function LogoSection(){
         mpesa,airtel,mastercard
     ]
     return(
-        <div className="w-full py-5 h-[80px] flex items-center justify-center gap-10 bg-logoSection">
+        <div className="w-full py-5 h-[80px] flex items-center flex-shrink-0 justify-center md:gap-10 gap-5 bg-logoSection">
             {
                 patners.map((item,index)=>(
-                    <Image src={item} width={150} height={150} alt={`This is patner ${index}`} key={index}/>
+                    <Image src={item} width={100} height={100} alt={`This is patner ${index} `} key={index}/>
                 ))
 
             }

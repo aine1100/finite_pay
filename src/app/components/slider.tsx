@@ -8,7 +8,7 @@ export default function Slider() {
       <div className="flex space-x-2 animate-marquee whitespace-nowrap">
         {/* Duplicating images to make the transition seamless */}
         {[...images, ...images].map((image, index) => (
-          <div key={index} className="w-full h-[30px] flex-shrink-0 ">
+          <div key={index} className="w-full h-[30px] md:h-[50px] flex-shrink-0 ">
             <Image src={image} alt={`slider image ${index + 1}`} className="w-full h-full object-contain" />
           </div>
         ))}

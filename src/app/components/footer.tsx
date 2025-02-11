@@ -4,8 +4,8 @@ import Button from "../utils/button";
 export default function Footer() {
   return (
     <div className="w-full bg-headertext flex flex-col items-center justify-center">
-      <div className="flex items-center justify-center gap-10 flex-col py-10 w-full px-40">
-        <div className="flex items-start justify-between w-full ">
+      <div className="flex   items-center justify-center gap-10 flex-col py-10 w-full px-40">
+        <div className="flex items-start xl:flex-row flex-col justify-between w-full ">
           <h1 className="text-white font-semibold xl:text-3xl text-2xl">
             Finite Pay
           </h1>
@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex items-start justify-between w-full">
+        <div className="flex items-start xl:flex-row flex-col justify-between w-full">
           <div className="flex flex-col gap-4 items-center justify-center">
             {link1.map((item, index) => (
               <Link
