@@ -3,7 +3,7 @@ import { work } from "../data/work"
 
 export default function PersonalWork(){
     return(
-        <div className="flex items-start justify-center flex-col md:flex-row  w-full">
+        <div className="flex items-start justify-center flex-wrap xl:flex-nowrap  w-full">
             {
                 work.map((item,index)=>(
                     <div className={`flex flex-col w-full px-10 items-center justify-center h-[400px]  gap-8 md:py-16 py-10 ` } key={index}>

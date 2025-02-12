@@ -4,13 +4,13 @@ import Button from "../utils/button";
 export default function Footer() {
   return (
     <div className="w-full bg-headertext flex flex-col items-center justify-center">
-      <div className="flex   items-center justify-center gap-10 flex-col py-10 w-full px-40">
-        <div className="flex items-start xl:flex-row flex-col justify-between w-full ">
+      <div className="flex   items-center justify-center gap-10 flex-col py-10 w-full px-10 md:px-40">
+        <div className="flex items-center xl:items-start  xl:flex-row flex-col justify-between w-full ">
           <h1 className="text-white font-semibold xl:text-3xl text-2xl">
             Finite Pay
           </h1>
-          <div className="flex flex-col items-start gap-3 ">
-            <p className="text-xl text-secondaryColor">
+          <div className="flex flex-col items-start gap-3 pt-2 ">
+            <p className="text-xl text-center text-secondaryColor">
               Sign up for our weekly news letter
             </p>
             <div className="flex gap-5 items-start justify-center ">
@@ -21,12 +21,12 @@ export default function Footer() {
               />
               <Button
                 text="Contact Us"
-                styles={`bg-secondaryColor text-white w-[119px] px-3  h-12 rounded-md`}
+                styles={`bg-secondaryColor text-sm md:text-md text-white w-[119px] px-3  h-12 rounded-md`}
               />
             </div>
           </div>
         </div>
-        <div className="flex items-start xl:flex-row flex-col justify-between w-full">
+        <div className="flex xl:items-start items-center flex-wrap xl:flex-nowrap  xl:flex-row flex-col justify-between w-full">
           <div className="flex flex-col gap-4 items-center justify-center">
             {link1.map((item, index) => (
               <Link
@@ -38,7 +38,7 @@ export default function Footer() {
               </Link>
             ))}
           </div>
-          <div className="flex flex-col gap-4 items-center justify-center">
+          <div className="flex xl:items-start items-center flex-wrap xl:flex-nowrap gap-4 flex-col justify-center">
             {link2.map((item, index) => (
               <Link
                 href={item.link}
@@ -49,7 +49,7 @@ export default function Footer() {
               </Link>
             ))}
           </div>
-          <div className="flex flex-col gap-4 items-center justify-center">
+          <div className="flex flex-col gap-4  xl:items-start items-center flex-wrap xl:flex-nowrap justify-center">
             {link3.map((item, index) => (
               <Link
                 href={item.link}
@@ -60,7 +60,7 @@ export default function Footer() {
               </Link>
             ))}
           </div>
-          <div className="flex flex-col gap-4 items-center justify-center">
+          <div className="flex flex-col gap-4  xl:items-start items-center flex-wrap xl:flex-nowrap justify-center">
             {link4.map((item, index) => (
               <Link
                 href={item.link}

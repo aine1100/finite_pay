@@ -2,7 +2,7 @@ import Image from "next/image"
 import { features } from "../data/feature"
 export default function PersonalFeatures(){
     return(
-        <div className="flex items-start justify-center flex-col md:flex-row  w-full">
+        <div className="flex items-start justify-center flex-wrap xl:flex-nowrap  w-full">
             {
                 features.map((item,index)=>(
                     <div className={`flex flex-col w-full px-10 items-center justify-center h-[400px]  gap-8 md:py-16 py-10 ${index%2==0 ? "bg-cardOneBg":"bg-cardTwoBg"}` } key={index}>

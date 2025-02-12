@@ -17,22 +17,23 @@ export default function PersonalHero() {
             FinitePay
           </h1>
           <div className="flex items-center justify-center gap-5">
-            {selectionButtons.map((items, index) => (
-              <div key={index}>
-                <Button
-                  text={items.text}
-                  styles={` rounded-lg xl:text-xl text-sm cursor-pointer ${
-                    selected == index
-                      ? "bg-secondaryColor text-white"
-                      : "text-secondaryColor border-secondaryColor border-[2px]"
-                  }`}
-                  handlePress={()=>{setIsSelected(index)
-                    router.push(items.link)
-                    
-                  }}
-                />
-              </div>
-            ))}
+           
+                       {selectionButtons.map((items, index) => (
+                         <div key={index}>
+                           <Button
+                             text={items.text}
+                             styles={` rounded-lg xl:text-xl text-sm cursor-pointer  ${
+                               selected == index
+                                 ? "bg-secondaryColor text-white"
+                                 : "text-secondaryColor border-secondaryColor border-[2px]"
+                             }`}
+                             handlePress={()=>{setIsSelected(index)
+                               router.push(items.link)
+                               
+                             }}
+                           />
+                         </div>
+                       ))}
           </div>
         </div>
        <div className="flex xl:flex-row flex-col w-full items-center xl:items-start justify-between sm:gap-5 md:gap-10 xl:gap-20">

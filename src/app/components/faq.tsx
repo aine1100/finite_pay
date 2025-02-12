@@ -13,7 +13,7 @@ export default function FaqPage() {
     };
 
     return (
-        <div className="px-10 pt-5 xl:pt-16 pb-5 flex flex-col xl:flex-row w-full items-start xl:justify-center xl:gap-20 justify-between">
+        <div className="px-10 pt-5 xl:pt-16 pb-5 flex flex-col xl:flex-row w-full items-center xl:items-start xl:justify-center xl:gap-20 justify-between">
             <div className="flex flex-col gap-5 w-full xl:w-[900px] bg-[#D4F3E1] p-4 rounded-md">
                 {faq.map((item, index) => (
                     <div key={index} className="flex px-3 gap-4 flex-col">
@@ -36,12 +36,12 @@ export default function FaqPage() {
                 ))}
               
             </div>
-            <div className="flex flex-col gap-3 items-start">
-              <h1 className="xl:text-3xl text-2xl font-bold text-primaryText">Frequently</h1>
-                <h1 className="xl:text-3xl text-2xl font-bold text-primaryText">Asked</h1>
-                <h1 className="xl:text-3xl text-2xl font-bold text-primaryText">Questions</h1>
-                <h1 className="text-xl text-secondaryColor font-bold">Anymore questions</h1>
-                <p className="text-primaryText">Lets get Your answer</p>
+            <div className="flex flex-col gap-3 pt-2 items-center xl:items-start">
+              <h1 className="xl:text-3xl text-2xl font-bold lg:text-start text-center text-primaryText">Frequently</h1>
+                <h1 className="xl:text-3xl text-2xl font-bold lg:text-start text-center text-primaryText">Asked</h1>
+                <h1 className="xl:text-3xl text-2xl font-bold lg:text-start text-center text-primaryText">Questions</h1>
+                <h1 className="text-xl text-secondaryColor lg:text-start text-center font-bold">Anymore questions</h1>
+                <p className="text-primaryText lg:text-start text-center">Lets get Your answer</p>
     
                 <Button text="Contact Us" styles={`bg-headertext text-white w-28 h-14 rounded-md`}/>
 
