@@ -1,11 +1,11 @@
-import Testimonials from "@/app/components/testimonial";
+// import Testimonials from "@/app/components/testimonial";
 import PersonalFeatures from "@/app/components/features";
 import OnBoarding from "@/app/components/onBoarding";
 import PersonalHero from "@/app/components/PersonalHero";
 import PersonalSafety from "@/app/components/safety";
 import Slider from "@/app/components/slider";
 import HowItWorks from "@/app/components/Working";
-import LogoSection from "@/app/utils/logoSection";
+// import LogoSection from "@/app/utils/logoSection";
 import FaqPage from "@/app/components/faq";
 import Footer from "@/app/components/footer";
 
@@ -17,12 +17,12 @@ export default function PersonAccountLanding(){
               <Slider/>
               <PersonalHero/>
               </div>
-                <LogoSection/>
+                {/* <LogoSection/> */}
                 <PersonalFeatures/>
                 <HowItWorks/>
                 <PersonalSafety/>
                 <OnBoarding/>
-                <Testimonials/>
+                {/* <Testimonials/> */}
                 <FaqPage/>
                 <Footer/>
                 
